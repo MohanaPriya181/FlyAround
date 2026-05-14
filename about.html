@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Popular Packages</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.x/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.x/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .top-bar {
+            font-size: 0.9rem;
+        }
+        .top-bar a {
+            text-decoration: none;
+        }
+  
+  .nav-link {
+    font-weight: 500;
+    margin-right: 10px;
+  }
+
+  .nav-link.active {
+    background-color: #ffd000;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+
+  .btn-warning {
+    background-color: #ffd000;
+    color: #000;
+    border: none;
+  }
+
+  .btn-warning:hover {
+    background-color: #e6b800;
+  }
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6f6f6;
+    }
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+   
+    .btn {
+      background-color: yellow;
+      color: black;
+      padding: 6px 12px;
+      font-weight: bold;
+      display: inline-block;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+    .modal-body form .form-control {
+  border-radius: 6px;
+}
+.enquire-btn {
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: aqua;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section img {
+  border-radius: 5px;
+}
+
+.sidebar-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.sidebar-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.sidebar-item p {
+  margin: 0;
+}
+
+.contact-box {
+  background: #FFD300;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+
+:root{
+    --max-width: 1060px;
+    --line: #e2e7eb;
+    --text: #222;
+    --muted: #6b6f74;
+    --accent: #ffd13c; 
+  }
+
+  .faq-section{
+    padding: 48px 20px;
+    background: white;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  .faq-container{
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  .faq-title{
+    font-size: 34px;
+    margin: 8px 0 30px;
+    font-weight: 500;
+    color: var(--text);
+  }
+
+  .accordion{
+    width: 100%;
+  }
+
+  .accordion-item{
+    border-bottom: 1px solid var(--line);
+  }
+
+  
+  .accordion-item.ask-question {
+    border-bottom: none;
+    padding: 18px 0;
+  }
+
+  .ask-link{
+    display: inline-block;
+    color: var(--text);
+    text-decoration: none;
+    padding-left: 6px;
+    font-size: 18px;
+  }
+
+  .accordion-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 18px 10px;
+    gap: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .faq-icon{
+    display: inline-grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    color: var(--muted);
+    font-weight: bold;
+    font-size: 15px;
+    flex: 0 0 34px;
+    background: #fff;
+  }
+
+  .faq-q{
+    flex: 1;
+    font-size: 18px;
+    color: var(--text);
+  }
+
+  .chev{
+    flex: 0 0 26px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: var(--muted);
+    transition: transform .25s ease, color .25s ease;
+  }
+
+ 
+  .accordion-panel{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .35s ease, padding .35s ease;
+    padding: 0 10px;
+    background: #fff;
+  }
+
+  .accordion-panel p{
+    margin: 16px 0 36px;
+    color: #666;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+
+  .accordion-header[aria-expanded="true"] .chev{
+    transform: rotate(180deg);
+    color: var(--accent);
+  }
+
+  .accordion-header[aria-expanded="true"] .faq-q{
+    color: var(--text);
+  }
+
+  
+  .accordion-header:hover .faq-q { color: #111; }
+  .accordion-header:focus { background: #fafafa; }
+
+  /* Responsive */
+  @media (max-width:860px){
+    .faq-title{ font-size: 28px; }
+    .faq-q{ font-size: 16px; }
+  }
+
+.custom-footer {
+ 
+  background-color: #323232;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: 1px solid #999;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.custom-footer p,
+.custom-footer li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.4rem;
+  color: #ccc;
+}
+
+.footer-contact {
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.footer-branches {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-branches li {
+  margin-bottom: 4px;
+}
+
+.footer-social a {
+  color: #ffd000;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ffffff;
+}
+  </style>
+</head>
+<body>
+  
+
+<div class="bg-dark text-white py-1 top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+       
+        <div>
+            <i class="fas fa-envelope"></i> 
+            <a href="mailto:mail@gtholidays.in" class="text-white">mail@gtholidays.in</a>
+            &nbsp;&nbsp;
+            <i class="fas fa-phone-alt"></i> +91 9940882200
+        </div>
+
+        
+        <div>
+            <a href="https://www.facebook.com/gtholidays.in" class="text-white me-3" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/gtholidays.in/" class="text-white" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+  <div class="container">
+
+    
+    <a class="navbar-brand" href="#">
+      <img src="logo.jpeg" alt="GT Holidays Logo" width="160">
+    </a>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">COMPANY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">GROUP TOURS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="packages.html">PACKAGES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">INDIA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">HONEYMOON</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">WEDDING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">CONTACT</a>
+        </li>
+      </ul>
+
+      
+      <a href="tel:+919940882200" class="btn btn-warning fw-bold">
+        +91 9940882200
+      </a>
+    </div>
+  </div>
+</nav>
+<section style="display: flex; justify-content: center; gap: 40px; padding: 40px; max-width: 1200px; margin: auto;">
+  
+  <!-- Left Main Content -->
+  <div style="flex: 3;">
+    <img src="bali.png" alt="Bali Tour" style="width: 100%; border-radius: 5px;">
+
+    <h2 style="font-size: 26px; font-weight: bold; margin-top: 20px;">
+      Your Ultimate Guide to Bali Tour Packages | Money Saving Tips for Indian Travellers
+    </h2>
+
+    <p style="color: #555; font-size: 16px; line-height: 1.6;">
+      Bali, the enchanting island paradise in Indonesia, has become a sought-after destination for Indian travellers seeking a memorable vacation. 
+      With its pristine beaches, vibrant cult
+    </p>
+
+    <a href="#" style="display: inline-block; background: #FFD300; padding: 10px 18px; font-weight: bold; text-decoration: none; color: black; margin-top: 10px; border-radius: 2px;">
+      READ MORE
+    </a>
+  </div>
+
+ 
+  <div style="flex: 1;">
+    <div style="margin-bottom: 30px;">
+      <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+        <img src="australia.jpeg" alt="Australia" style="width: 70px; height: 70px; object-fit: cover;">
+        <div>
+          <p style="font-weight: bold; font-size: 14px; margin: 0;">
+            When Is The Best Time To Travel To Australia From India
+          </p>
+          <p style="font-size: 12px; color: gray; margin: 5px 0 0;">March 27, 2024</p>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+        <img src="bali.png" alt="Bali" style="width: 70px; height: 70px; object-fit: cover;">
+        <div>
+          <p style="font-weight: bold; font-size: 14px; margin: 0;">
+            Your Ultimate Guide to Bali Tour Packages | Money Saving Tips for Indian Travellers
+          </p>
+          <p style="font-size: 12px; color: gray; margin: 5px 0 0;">March 26, 2024</p>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 10px;">
+        <img src="srilanka.jpeg" alt="Sri Lanka" style="width: 70px; height: 70px; object-fit: cover;">
+        <div>
+          <p style="font-weight: bold; font-size: 14px; margin: 0;">
+            Travelling to Sri Lanka from South India | What to Expect and Essential Tips
+          </p>
+          <p style="font-size: 12px; color: gray; margin: 5px 0 0;">March 25, 2024</p>
+        </div>
+      </div>
+    </div>
+
+   
+    <div style="background: #FFD300; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 4px;">
+      <h3 style="margin-top: 0; font-size: 20px;">Got a Question?</h3>
+      <p style="font-size: 14px; margin-bottom: 15px;">
+        Do not hesitate to call or whatsapp us. We are happy to talk to you anytime.
+      </p>
+      <p style="margin: 0; font-size: 14px;">📞 +91 9940882200</p>
+      <p style="margin: 0; font-size: 14px;">📧 mail@flyaround.in</p>
+    </div>
+  </div>
+
+</section>
+
+<section class="faq-section" aria-label="Frequently asked questions">
+  <div class="faq-container">
+    <h2 class="faq-title">FAQs</h2>
+
+    <div class="accordion" id="faqAccordion">
+      <!-- Item 1 -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="faq-icon" aria-hidden="true">?</span>
+          <span class="faq-q">Why should we book your tour packages?</span>
+          <span class="chev" aria-hidden="true">
+           
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </button>
+        <div class="accordion-panel">
+          <p>
+            FlyAround creates thoughtfully curated itineraries with vetted hotels, vetted local operators and 24/7 support. Our advantage is personalised service — we customise trips to your budget and interests, negotiate the best rates and help with visas, transfers and local guidance so you get a worry-free holiday.
+          </p>
+        </div>
+      </div>
+
+     
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="true">
+          <span class="faq-icon" aria-hidden="true">?</span>
+          <span class="faq-q">Are you a legitimate tour operator?</span>
+          <span class="chev" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </button>
+        <div class="accordion-panel">
+          <p>
+            Yes — FlyAround is a registered tour operator. We work with licensed local partners and provide booking confirmations, clear T&Cs and direct contact details so you can verify your booking and reach us before or during travel.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="faq-icon" aria-hidden="true">?</span>
+          <span class="faq-q">How do we contact you?</span>
+          <span class="chev" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </button>
+        <div class="accordion-panel">
+          <p>
+            You can contact FlyAround via phone, WhatsApp, email or the contact form on our site. After booking you also receive a direct contact for your booking manager who is available for pre-trip questions and on-trip support.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="faq-icon" aria-hidden="true">?</span>
+          <span class="faq-q">What kind of vehicles do you use?</span>
+          <span class="chev" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </button>
+        <div class="accordion-panel">
+          <p>
+            We partner with reputable local transport providers. Depending on the itinerary this may be sedans, SUVs, mini-vans or air-conditioned coaches. Every vehicle is checked for safety and driver professionalism before we include them in a package.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="faq-icon" aria-hidden="true">?</span>
+          <span class="faq-q">How do we get to know about your holiday packages, events and peak times?</span>
+          <span class="chev" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </button>
+        <div class="accordion-panel">
+          <p>
+            Subscribe to FlyAround’s newsletter and follow us on social media for package releases, seasonal deals and local event alerts. We also highlight peak-season advice on each destination page to help you choose the best travel dates.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="faq-icon" aria-hidden="true">?</span>
+          <span class="faq-q">What does a Group Tour mean?</span>
+          <span class="chev" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </button>
+        <div class="accordion-panel">
+          <p>
+            A FlyAround Group Tour is a scheduled itinerary for multiple travellers on the same dates, typically with a group leader or local guide. Group tours are budget-friendly and great if you want a structured itinerary and the opportunity to meet other travellers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 7 -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="faq-icon" aria-hidden="true">?</span>
+          <span class="faq-q">Do you arrange attractions entries and accommodation?</span>
+          <span class="chev" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </button>
+        <div class="accordion-panel">
+          <p>
+            Yes. FlyAround handles hotel bookings, transfers, and pre-booked attraction entries where applicable. We can also suggest and add optional excursions to your package.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 8 -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="faq-icon" aria-hidden="true">?</span>
+          <span class="faq-q">How can we book the tour packages? Is there any list available?</span>
+          <span class="chev" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </button>
+        <div class="accordion-panel">
+          <p>
+            Browse FlyAround's packages on the packages page, or contact our travel advisors to receive a tailored list based on your dates and interests. We also email seasonal package lists to subscribers.
+          </p>
+        </div>
+      </div>
+
+      <script>
+  (function () {
+    const accordion = document.getElementById('faqAccordion');
+    if (!accordion) return;
+
+    
+    const headers = accordion.querySelectorAll('.accordion-header');
+
+    function closePanel(panel){
+      panel.style.maxHeight = null;
+      panel.previousElementSibling && panel.previousElementSibling.setAttribute('aria-expanded', 'false');
+    }
+    function openPanel(panel, header){
+      panel.style.maxHeight = panel.scrollHeight + 20 + 'px';
+      header.setAttribute('aria-expanded', 'true');
+    }
+
+  
+    headers.forEach(h => {
+      const panel = h.nextElementSibling;
+      if (!panel) return;
+      if (h.getAttribute('aria-expanded') === 'true') {
+        
+        panel.style.maxHeight = panel.scrollHeight + 20 + 'px';
+      } else {
+        panel.style.maxHeight = null;
+      }
+
+     
+      h.addEventListener('click', function (e) {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        
+        headers.forEach(otherHeader => {
+          if (otherHeader === this) return;
+          const otherPanel = otherHeader.nextElementSibling;
+          if (!otherPanel) return;
+          otherHeader.setAttribute('aria-expanded', 'false');
+          otherPanel.style.maxHeight = null;
+        });
+
+        const panel = this.nextElementSibling;
+        if (!panel) return;
+
+        if (isExpanded) {
+          this.setAttribute('aria-expanded', 'false');
+          panel.style.maxHeight = null;
+        } else {
+          this.setAttribute('aria-expanded', 'true');
+          
+          panel.style.maxHeight = panel.scrollHeight + 20 + 'px';
+        }
+      });
+    });
+
+   
+    window.addEventListener('resize', () => {
+      headers.forEach(h => {
+        const panel = h.nextElementSibling;
+        if (!panel) return;
+        if (h.getAttribute('aria-expanded') === 'true') {
+          panel.style.maxHeight = panel.scrollHeight + 20 + 'px';
+        }
+      });
+    });
+  })();
+</script>
+
+      
+      <div class="accordion-item ask-question" id="footer">
+        <a class="ask-link" href="mailto:info@flyaround.example?subject=Question%20about%20packages">Ask a Question</a>
+      </div>
+    </div>
+  </div>
+</section><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="custom-footer mt-5 text-white">
+  <div class="footer-top py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 class="footer-title">Corporate Office</h5>
+          <p>FlyAround Pvt LTD,<br>
+            Novel Tech Park,<br>
+            Opposite to 1 MG Mall,<br>
+            MG Road, Bangalore – 560042,<br>
+            Karnataka, India.
+          </p>
+          <p class="footer-contact"><strong>Call Us</strong><br>+91 9940882200</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="footer-title">Head Office</h5>
+          <p>FlyAround Pvt LTD,<br>
+            No.1, Gemini Parsn,<br>
+            Kodambakkam High Road,<br>
+            Nungambakkam, Chennai – 600006,<br>
+            Tamil Nadu, India.
+          </p>
+          <p class="footer-contact"><strong>Email Us</strong><br>mail@flyaround.in</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="footer-title">Our Branches</h5>
+          <div class="row">
+            <div class="col-6">
+              <ul class="footer-branches">
+                <li>Mumbai</li>
+                <li>Hyderabad</li>
+                <li>Bangalore</li>
+                <li>Chennai</li>
+                <li>Coimbatore</li>
+                <li>Erode</li>
+                <li>Madurai</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="footer-branches">
+                <li>Trichy</li>
+                <li>Salem</li>
+                <li>Kochi</li>
+                <li>Vellore</li>
+                <li>Pondicherry</li>
+                <li>Nagercoil</li>
+                <li>Kanyakumari</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-social mt-3">
+            <strong>Follow Us On</strong><br>
+            <a href="#"><i class="fab fa-facebook-f me-3"></i></a>
+            <a href="#"><i class="fab fa-instagram me-3"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in me-3"></i></a>
+            <a href="#"><i class="fab fa-youtube me-3"></i></a>
+            <a href="#"><i class="fab fa-google me-3"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

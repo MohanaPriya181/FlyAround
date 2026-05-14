@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel | Tourism | Trips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="bg-dark text-white py-1 top-bar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div>
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:mail@gtholidays.in" class="text-white">mail@flyaround.in</a>
+    </div>
+    <div>
+      <a href="https://www.facebook.com/gtholidays.in" class="text-white me-3" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/gtholidays.in/" class="text-white" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="data:image/jpeg;base64,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" alt="Logo" width="100">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">HOME</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">COMPANY</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+            <li><a class="dropdown-item" href="#">Leadership</a></li>
+            <li><a class="dropdown-item" href="#">Careers</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">GROUP TOURS</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">India Group Tours</a></li>
+            <li><a class="dropdown-item" href="#">International Group Tours</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">PACKAGES</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="packages.html">All Packages</a><li></li>
+            <li><a class="dropdown-item" href="#">Austria</a><li>
+            <li><a class="dropdown-item" href="#">Belgium</a></li>
+            <li><a class="dropdown-item" href="#">Bulgaria</a></li>
+            <li><a class="dropdown-item" href="#">France</a></li>
+            <li><a class="dropdown-item" href="#">Germany</a></li>
+            <li><a class="dropdown-item" href="#">Greece</a></li>
+            <li><a class="dropdown-item" href="#">Greenland</a></li>
+            <li><a class="dropdown-item" href="#">Iceland</a></li>
+            <li><a class="dropdown-item" href="#">Ireland</a></li>
+            <li><a class="dropdown-item" href="#">Italy</a></li>
+            <li><a class="dropdown-item" href="#">London</a></li>
+            <li><a class="dropdown-item" href="#">Netherlands</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">INDIA</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Delhi</a></li>
+            <li><a class="dropdown-item" href="#">Jaipur</a></li>
+            <li><a class="dropdown-item" href="#">Kerala</a></li>
+            <li><a class="dropdown-item" href="#">Rajasthan</a></li>
+            <li><a class="dropdown-item" href="#">Mysore</a></li>
+            <li><a class="dropdown-item" href="#">Kedarnath</a></li>
+            <li><a class="dropdown-item" href="#">Tamilnadu</a></li>
+            <li><a class="dropdown-item" href="#">Mizoram</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">TAMIL NADU</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Chennai</a></li>
+            <li><a class="dropdown-item" href="#">Madurai</a></li>
+            <li><a class="dropdown-item" href="#">Kanyakumari</a></li>
+            <li><a class="dropdown-item" href="#">Coimbatore</a></li>
+            <li><a class="dropdown-item" href="#">Tiruchirappalli</a></li>
+            <li><a class="dropdown-item" href="#">Salem</a></li>
+            <li><a class="dropdown-item" href="#">Erode</a></li>
+            <li><a class="dropdown-item" href="#">Thoothukudi</a></li>
+            <li><a class="dropdown-item" href="#">Thanjavur</a></li>
+            <li><a class="dropdown-item" href="#">Dindigul</a></li>
+            <li><a class="dropdown-item" href="#">Tirunelveli</a></li>
+
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">WEDDING</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Destination Wedding</a></li>
+            <li><a class="dropdown-item" href="#">Beach Wedding</a></li>
+            <li><a class="dropdown-item" href="#">Traditional</a></li>
+          </ul>
+        </li>
+
+        
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasContact" role="button" aria-controls="offcanvasContact">
+            CONTACT
+          </a>
+        </li>
+      </ul>
+
+      <a href="tel:+919940882200" class="btn btn-warning fw-bold">
+        +91 9940882200
+      </a>
+    </div>
+  </div>
+</nav>
+<div id="carouselExampleControls" class="carousel slide custom-carousel" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img1.jpeg" class="d-block w-100" alt="Slide 1">
+    </div>
+    <div class="carousel-item">
+      <img src="img2.jpg" class="d-block w-100" alt="Slide 2">
+    </div>
+    <div class="carousel-item">
+      <img src="img3.jpeg" class="d-block w-100" alt="Slide 3">
+    </div>
+    <div class="carousel-item">
+      <img src="img4.jpeg" class="d-block w-100" alt="Slide 3">
+    </div>
+  </div>
+</div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasContact" aria-labelledby="offcanvasContactLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasContactLabel">Contact Information</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p><strong>Phone:</strong> +91 9940882200</p>
+    <p><strong>Email:</strong> <a href="mailto:mail@gtholidays.in">mail@flyaround.in</a></p>
+    <p><strong>Address:</strong> 123, FlyAround Street, Chennai, Tamil Nadu, India</p>
+    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/gtholidays.in/" target="_blank">@flyAround.in</a></p>
+    <p><strong>Facebook:</strong> <a href="https://www.facebook.com/gtholidays.in" target="_blank">FlyAround FB</a></p>
+  </div>
+</div>
+
+<!-- Trending Tours Section -->
+<div class="container my-5">
+  <h2 class="text-center mb-4" style="font-family: georgia,serif;">Trending Tours Awaiting Now</h2>
+
+  <div class="position-relative">
+    
+
+    
+    <div id="cardScroll" class="d-flex overflow-hidden" style="scroll-behavior: smooth;">
+      
+      <div class="card mx-2" style="min-width: 18rem;">
+        <img src="goa.webp" class="card-img-top" alt="Goa Beach">
+        <div class="card-body">
+          <h5 class="card-title">Goa</h5>
+          <p class="card-text">Enjoy the sun, sand, and surf in Goa.</p>
+          <a href="#" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+
+      <div class="card mx-2" style="min-width: 18rem;">
+        <img src="paris.jpeg" class="card-img-top" alt="Paris">
+        <div class="card-body">
+          <h5 class="card-title">Paris</h5>
+          <p class="card-text">Fall in love with Parisian charm & Eiffel Tower</p>
+          <a href="#" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+
+      <div class="card mx-2" style="min-width: 18rem;">
+        <img src="singapore.jpeg" class="card-img-top" alt="Singapore">
+        <div class="card-body">
+          <h5 class="card-title">Singapore</h5>
+          <p class="card-text">Modern skyline & cultural wonders.</p>
+          <a href="#" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+
+      <div class="card mx-2" style="min-width: 18rem;">
+        <img src="Dubai.jpeg" class="card-img-top" alt="Dubai">
+        <div class="card-body">
+          <h5 class="card-title">Dubai</h5>
+          <p class="card-text">Desert safaris and skyscrapers.</p>
+          <a href="#" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+
+      <div class="card mx-2" style="min-width: 18rem;">
+        <img src="Kashmir.jpeg" class="card-img-top" alt="Kashmir">
+        <div class="card-body">
+          <h5 class="card-title">Kashmir</h5>
+          <p class="card-text">Snowy peaks and serene lakes.</p>
+          <a href="#" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+
+      <div class="card mx-2" style="min-width: 18rem;">
+        <img src="jaipur.jpeg" class="card-img-top" alt="Jaipur">
+        <div class="card-body">
+          <h5 class="card-title">Jaipur</h5>
+          <p class="card-text">Pink city with Forts, palaces, and heritage.</p>
+          <a href="#" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+    </div>
+   
+    <button class="btn btn-dark position-absolute top-50 start-0 translate-middle-y z-1" onclick="scrollCards(-1)">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+ 
+    <button class="btn btn-dark position-absolute top-50 end-0 translate-middle-y z-1" onclick="scrollCards(1)">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+</div>
+
+      
+
+   
+<section class="enquiry-section mt-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Column - Quote -->
+      <div class="col-md-6 text-center text-md-start">
+        <h2 class="mb-4">“Travel far enough, you meet yourself.”</h2>
+        <p class="lead">Start your journey with us — just a few details away from your dream vacation.</p>
+      </div>
+
+      <!-- Right Column - Form -->
+      <div class="col-md-6">
+        <h3 class="text-center mb-4">Book Your Dream Vacay Today!</h3>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Name *" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="City of Residence *" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email *" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="Phone Number *" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="WhatsApp">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Travel Destination *" required>
+          </div>
+          <div class="mb-3">
+            <input type="date" class="form-control" placeholder="Date of Travel *" required>
+          </div>
+          <div class="mb-3">
+            <input type="number" class="form-control" placeholder="No. of People *" required>
+          </div>
+          <div class="mb-3">
+  <select class="form-control" required>
+    <option value="" disabled selected>Vacation Type *</option>
+    <option value="Holiday Trip">Holiday Trip</option>
+    <option value="Family Trip">Family Trip</option>
+    <option value="Friends Trip">Friends Trip</option>
+  </select>
+</div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-warning px-5 py-2">Enquire Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container my-5">
+  <h2 class="text-center mb-4" style="font-family: georgia,serif;">Our Happy Clients! </h2>
+
+  <div id="happyClientsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <div class="card text-white bg-dark client-fixed-card">
+  <img src="client1.jpeg" class="card-img-top" alt="Client 1">
+  <div class="card-body">
+    <p class="card-text">“The choice of hotels and vacation quality is definitely world-class. Kudos Team.”</p>
+    <h6 class="card-title text-warning">Sai Pallavi</h6>
+  </div>
+</div>
+          </div>
+           <div class="col-md-3">
+            <div class="card text-white bg-dark client-fixed-card">
+  <img src="client5.jpeg" class="card-img-top" alt="Client 1">
+  <div class="card-body">
+    <p class="card-text">“The choice of hotels and vacation quality is definitely world-class. Kudos Team.”</p>
+    <h6 class="card-title text-warning">Siva KarthiKeyan</h6>
+  </div>
+</div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-white bg-dark client-fixed-card">
+              <img src="client2.jpeg" class="card-img-top" alt="Client 2">
+              <div class="card-body">
+                <p class="card-text">“We love the detailing they do in curating each trip and the regular follow-ups.”</p>
+                <h6 class="card-title text-warning">Dulquer Salman</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <div class="card text-white bg-dark client-fixed-card">
+              <img src="client3.jpeg" class="card-img-top" alt="Client 3">
+              <div class="card-body">
+                <p class="card-text">“Our trip to Spain was one of the best ever. Handled with style by Team GT.”</p>
+                <h6 class="card-title text-warning">Suriya & Jo</h6>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-3">
+            <div class="card text-white bg-dark client-fixed-card">
+              <img src="client6.jpeg" class="card-img-top" alt="Client 3">
+              <div class="card-body">
+                <p class="card-text">“Our trip to Spain was one of the best ever. Handled with style by Team GT.”</p>
+                <h6 class="card-title text-warning">Suriya & Jo</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-white bg-dark client-fixed-card">
+              <img src="client4.jpeg" class="card-img-top" alt="Client 4">
+              <div class="card-body">
+                <p class="card-text">“Their creativity is one of the most unique qualities that can't be replaced.”</p>
+                <h6 class="card-title text-warning">Nazriya</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#happyClientsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#happyClientsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<script>
+  const scrollContainer = document.getElementById('cardScroll');
+  const scrollAmount = scrollContainer.querySelector('.card').offsetWidth + 16;
+
+  
+  function duplicateCards() {
+    const cards = [...scrollContainer.children];
+    cards.forEach(card => {
+      const clone = card.cloneNode(true);
+      scrollContainer.appendChild(clone);
+    });
+  }
+
+  duplicateCards();
+
+  let scrollPos = 0;
+  function autoScroll() {
+    scrollPos += scrollAmount;
+    if (scrollPos >= scrollContainer.scrollWidth / 2) {
+      scrollPos = 0;
+      scrollContainer.scrollLeft = 0;
+    }
+    scrollContainer.scrollTo({
+      left: scrollPos,
+      behavior: 'smooth'
+    });
+  }
+
+  setInterval(autoScroll, 2500); // Change scroll speed here
+
+  
+  function scrollCards(direction) {
+    scrollPos += direction * scrollAmount;
+    scrollContainer.scrollTo({
+      left: scrollPos,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="custom-footer mt-5 text-white">
+  <div class="footer-top py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 class="footer-title">Corporate Office</h5>
+          <p>FlyAround Pvt LTD,<br>
+            Novel Tech Park,<br>
+            Opposite to 1 MG Mall,<br>
+            MG Road, Bangalore – 560042,<br>
+            Karnataka, India.
+          </p>
+          <p class="footer-contact"><strong>Call Us</strong><br>+91 9940882200</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="footer-title">Head Office</h5>
+          <p>FlyAround Pvt LTD,<br>
+            No.1, Gemini Parsn,<br>
+            Kodambakkam High Road,<br>
+            Nungambakkam, Chennai – 600006,<br>
+            Tamil Nadu, India.
+          </p>
+          <p class="footer-contact"><strong>Email Us</strong><br>mail@flyaround.in</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="footer-title">Our Branches</h5>
+          <div class="row">
+            <div class="col-6">
+              <ul class="footer-branches">
+                <li>Mumbai</li>
+                <li>Hyderabad</li>
+                <li>Bangalore</li>
+                <li>Chennai</li>
+                <li>Coimbatore</li>
+                <li>Erode</li>
+                <li>Madurai</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="footer-branches">
+                <li>Trichy</li>
+                <li>Salem</li>
+                <li>Kochi</li>
+                <li>Vellore</li>
+                <li>Pondicherry</li>
+                <li>Nagercoil</li>
+                <li>Kanyakumari</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-social mt-3">
+            <strong>Follow Us On</strong><br>
+            <a href="#"><i class="fab fa-facebook-f me-3"></i></a>
+            <a href="#"><i class="fab fa-instagram me-3"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in me-3"></i></a>
+            <a href="#"><i class="fab fa-youtube me-3"></i></a>
+            <a href="#"><i class="fab fa-google me-3"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

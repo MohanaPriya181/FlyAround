@@ -1,0 +1,222 @@
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-bar {
+      font-size: 1.1rem;
+    }
+
+    .top-bar a {
+      text-decoration: none;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      margin-right: 10px;
+    }
+
+    .nav-link.active {
+      background-color: #ffd000;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+
+    .btn-warning {
+      background-color: #ffd000;
+      color: #000;
+      border: none;
+    }
+
+    .btn-warning:hover {
+      background-color: #e6b800;
+    }
+
+    .offcanvas-body {
+      font-size: 1rem;
+      line-height: 1.6;
+      background-color: #dad8d8;
+    }
+
+    .navbar-nav .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+      animation: fadeIn 0.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .tour-card {
+  width: 18rem;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tour-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 4%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  padding: 10px;
+  background-size: 50% 50%;
+  margin-top: -20px;
+}
+
+    .custom-carousel {
+    max-height: 600px; 
+    overflow: hidden;
+  }
+
+  .custom-carousel .carousel-item img {
+    height: 600px; 
+    object-fit: cover;
+  }
+  .enquiry-section {
+  background: #000000;
+  padding: 60px 0;
+  font-family: georgia, serif;
+}
+
+.enquiry-section h2 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.enquiry-section p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.enquiry-section .form-control {
+  border-radius: 1;
+  padding: 7px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+
+.enquiry-section .btn-warning {
+  background-color: #ffd000;
+  color: #000;
+  font-weight: bold;
+  border: none;
+}
+
+.enquiry-section .btn-warning:hover {
+  background-color: #e6b800;
+}
+.enquiry-section {
+  background-image: url('map.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  color: #060606;
+  position: relative;
+  z-index: 1;
+}
+
+.enquiry-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(165, 165, 165, 0.5); /* Dark overlay */
+  z-index: -1;
+}
+.custom-footer {
+  background-color: #323232;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: 1px solid #999;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.custom-footer p,
+.custom-footer li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.4rem;
+  color: #ccc;
+}
+
+.footer-contact {
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.footer-branches {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-branches li {
+  margin-bottom: 4px;
+}
+
+.footer-social a {
+  color: #ffd000;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ffffff;
+}
+
+.client-fixed-card {
+  height: 550px; 
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.client-fixed-card .card-img-top {
+  height: 380px;
+  object-fit: cover;
+}
+
+.client-fixed-card .card-body {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+ <!-- #cardScroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  #cardScroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    font-family: georgia, serif;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+  } -->
+
+ 
